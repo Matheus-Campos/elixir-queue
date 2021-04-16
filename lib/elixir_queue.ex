@@ -15,7 +15,7 @@ defmodule ElixirQueue do
 
   @impl true
   def init(initial_state) do
-    GenServer.start_link(__MODULE__, initial_state)
+    {:ok, initial_state}
   end
 
   @impl true
